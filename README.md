@@ -18,4 +18,3 @@
 ![Screen 16](IMG_0182.jpeg)
 ![Screen 17](IMG_0183.jpeg)
 ![Screen 18](IMG_0187.jpeg)
-![Screen 18](ScreenRecording_06-09-2026 14-04-13_1.mov)
