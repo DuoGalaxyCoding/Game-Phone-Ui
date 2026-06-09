@@ -1,0 +1,1063 @@
+<div class="iphone-outer-frame">
+
+  <!-- Side Buttons -->
+  <div class="phone-button left-button silent-switch" id="silentSwitch"></div>
+  <div class="phone-button left-button left-volume-up" id="leftVolumeUp"></div>
+  <div class="phone-button left-button left-volume-down" id="leftVolumeDown"></div>
+
+  <!-- Power Button -->
+  <div class="phone-button right-button power-button" id="powerButton"></div>
+
+  <div class="phone-wrapper">
+    <div class="iphone-frame">
+
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <span class="time" id="time">--:--</span>
+        <div class="wifi-icon">
+          <div class="dot"></div>
+          <div class="wave wave1"></div>
+          <div class="wave wave2"></div>
+        </div>
+        <div class="battery-status">
+          <span id="batteryPercent">100%</span>
+          <div class="battery-icon">
+            <div class="battery-level" id="batteryLevel"></div>
+            <div class="battery-cap"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Island -->
+      <div class="dynamic-island" id="dynamicIsland">
+        <div class="island-default" id="islandDefault">🔔 New Notification</div>
+        <div class="island-expanded" id="islandExpanded">
+          <div class="island-content">
+            <p class="island-title">EMS Dispatch</p>
+            <p class="island-body">Emergency call in Strawberry.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Volume Indicator -->
+      <div class="volume-indicator" id="volumeIndicator">Volume: 50%</div>
+
+      <!-- Battery Warning Notification -->
+      <div id="battery-warning" class="notification hidden">
+        <p>🔋 Low Battery<br>Your phone has 5% remaining.</p>
+      </div>
+
+      <!-- Scrollable Home Screens -->
+      <div class="home-screens">
+
+        <!-- Page 1 -->
+        <div class="home-screen active">
+
+          <!-- Weather Widget -->
+          <div id="weather-widget">
+            <div class="current-weather">
+              <div class="temp-location">
+                <div class="temp">—-°F</div>
+                <div class="location"></div>
+                <div class="weather-desc"></div>
+              </div>
+              <div class="current-icon">
+                <img src="" alt="">
+              </div>
+            </div>
+
+            <!-- Forecast row -->
+            <div class="forecast">
+              <div class="forecast-day">
+                <div class="day"></div><img src="" alt="" class="forecast-icon">
+                <div class="forecast-temp"></div>
+              </div>
+              <div class="forecast-day">
+                <div class="day"></div><img src="" alt="" class="forecast-icon">
+                <div class="forecast-temp"></div>
+              </div>
+              <div class="forecast-day">
+                <div class="day"></div><img src="" alt="" class="forecast-icon">
+                <div class="forecast-temp"></div>
+              </div>
+              <div class="forecast-day">
+                <div class="day"></div><img src="" alt="" class="forecast-icon">
+                <div class="forecast-temp"></div>
+              </div>
+              <div class="forecast-day">
+                <div class="day"></div><img src="" alt="" class="forecast-icon">
+                <div class="forecast-temp"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Apps Grid Page 1 -->
+          <div class="app-grid">
+            <div class="app-icon" onclick="openApp('jobs')">
+              <img src="https://img.icons8.com/ios-filled/50/briefcase.png" />
+              <span>Jobs</span>
+            </div>
+            <div class="app-icon" onclick="openApp('bank')">
+              <img src="https://img.icons8.com/ios-filled/50/card-in-use.png" />
+              <span>Wallet</span>
+            </div>
+            <div class="app-icon" onclick="openApp('settings')">
+              <img src="https://img.icons8.com/ios-filled/50/settings.png" />
+              <span>Settings</span>
+            </div>
+            <div class="app-icon" onclick="openApp('ems')">
+              <img src="https://img.icons8.com/ios-filled/50/ambulance.png" />
+              <span>EMS</span>
+            </div>
+            <div class="app-icon" onclick="openApp('music')">
+              <img src="https://img.icons8.com/ios-filled/50/musical-notes.png" />
+              <span>Music</span>
+            </div>
+            <div class="app-icon" onclick="openApp('camera')">
+              <img src="https://img.icons8.com/ios-filled/50/camera--v1.png" />
+              <span>Camera</span>
+            </div>
+            <div class="app-icon" onclick="openApp('gallery')">
+              <img src="https://img.icons8.com/ios-filled/50/picture.png" />
+              <span>Gallery</span>
+            </div>
+            <div class="app-icon" onclick="openApp('taxi')">
+              <img src="https://img.icons8.com/ios-filled/50/taxi.png" />
+              <span>Taxi</span>
+            </div>
+            <div class="app-icon" onclick="openApp('messages')">
+              <img src="https://img.icons8.com/ios-filled/50/speech-bubble.png" />
+              <span>Messages</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="home-screen">
+          <div class="app-grid">
+            <div class="app-icon" onclick="openApp('contacts')">
+              <img src="https://img.icons8.com/ios-filled/50/contacts.png" />
+              <span>Contacts</span>
+            </div>
+            <div class="app-icon" onclick="openApp('cityeats')">
+              <img src="https://img.icons8.com/ios-filled/50/restaurant.png" />
+              <span>CityEats</span>
+            </div>
+            <div class="app-icon" onclick="openApp('gps')">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="30" fill="black">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+              </svg>
+              <span>GPS</span>
+            </div>
+            <div class="app-icon" onclick="openApp('blackout-app')">
+              <img src="https://img.icons8.com/ios-filled/50/000000/hacker.png" alt="Blackout" />
+              <span>Blackout</span>
+            </div>
+            <div class="app-icon" onclick="openApp('calculator')">
+              <img src="https://img.icons8.com/ios-filled/50/000000/calculator.png" />
+              <span>Calculator</span>
+            </div>
+            <div class="app-icon" onclick="openApp('citypulse')">
+              <img src="https://img.icons8.com/ios-filled/50/000000/news.png" alt="CityPulse" />
+              <span>CityPulse</span>
+            </div>
+            <div class="app-icon" onclick="openApp('quickdrop')">
+              <img src="https://img.icons8.com/ios-filled/50/000000/delivery.png" alt="QuickDrop" />
+              <span>QuickDrop</span>
+            </div>
+            <div class="app-icon" onclick="openApp('tradehub')">
+              <img src="https://img.icons8.com/?size=100&id=8299&format=png&color=000000" alt="Marketplace" />
+              <span>TradeHub</span>
+            </div>
+            <div class="app-icon" onclick="openApp('appstore')">
+              <img src="https://img.icons8.com/?size=150&id=bep_ZUj5TddJ&format=png&color=000000" alt="App Store Icon" />
+              <span>AppStore</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jobs App -->
+      <div class="app-screen jobs-theme" id="jobs-screen">
+        <h2>Job Center</h2>
+        <div class="job-status">
+          <p><strong>Status:</strong> <span id="jobStatus">On Vacation</span></p>
+          <button onclick="clockIn()">🟢 Clock In</button>
+          <button onclick="clockOut()">🔴 Clock Out</button>
+        </div>
+        <h3>Available Jobs</h3>
+        <div class="job-list" id="jobList">
+          <div class="job-card" onclick="toggleJob(this)">
+            🍔 Restaurant
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $15–$20/hr</p>
+              <p><strong>Requirements:</strong> Good Citizen, Cleanly</p>
+              <p><strong>Description:</strong> Serve customers and prepare food</p>
+
+              <button onclick="applyJob(event, 'Restaurant')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            ♻️ Recycle
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $10–$15/hr</p>
+              <p><strong>Requirements:</strong> Good Citizen, Cleanly</p>
+              <p><strong>Description:</strong> Collect and sort recyclable materials from around the city </p>
+
+              <button onclick="applyJob(event, 'Recycle')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🚛 Garbage Truck
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $18–$25/hr</p>
+              <p><strong>Requirements:</strong> Driver’s License, Cleanly</p>
+              <p><strong>Description:</strong> Collect trash from residential and commercial areas across the city</p>
+
+              <button onclick="applyJob(event, 'Garbage Truck')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🔧 Mechanic
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $20–$30/hr</p>
+              <p><strong>Requirements:</strong> Reliable, Mechanical Knowledge</p>
+              <p><strong>Description:</strong> Repair and maintain vehicles for customers across the city</p>
+
+              <button onclick="applyJob(event, 'Mechanic')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🚌 Bus Driver
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $18–$28/hr</p>
+              <p><strong>Requirements:</strong> Driver’s License, Clean Driving Record</p>
+              <p><strong>Description:</strong> Transport passengers safely across the city along designated routes</p>
+
+              <button onclick="applyJob(event, 'Bus Driver')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🌿 Weedshop
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $20–$32/hr</p>
+              <p><strong>Requirements:</strong> Weed License, People's Person</p>
+              <p><strong>Description:</strong> Help customers choose products, manage stock, and run the dispensary</p>
+
+              <button onclick="applyJob(event, 'Weedshop')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            ⛽ Gas Station
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $14–$22/hr</p>
+              <p><strong>Requirements:</strong> Good Citizen, People's Person</p>
+              <p><strong>Description:</strong> Assist customers, manage the register, and restock items in the store</p>
+
+              <button onclick="applyJob(event, 'Gas Station')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            💍 Jewelry Store
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $25–$40/hr</p>
+              <p><strong>Requirements:</strong> Clean Record, Attentiveness</p>
+              <p><strong>Description:</strong> Assist customers with high-value purchases and manage valuable inventory</p>
+
+              <button onclick="applyJob(event, 'Jewelry')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🏪 Corner Store
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $12–$20/hr</p>
+              <p><strong>Requirements:</strong> Reliable, People's Person</p>
+              <p><strong>Description:</strong> Run the register, assist customers, and restock store shelves</p>
+
+              <button onclick="applyJob(event, 'Corner Store')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🛍️ Retail
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $14–$24/hr</p>
+              <p><strong>Requirements:</strong> People's Person, Cleanly</p>
+              <p><strong>Description:</strong> Assist customers, manage sales, and keep the store organized and stocked</p>
+
+              <button onclick="applyJob(event, 'Retail')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🌭 Hotdog Stand
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $12–$18/hr</p>
+              <p><strong>Requirements:</strong> Good Citizen</p>
+              <p><strong>Description:</strong> Prepare and sell hotdogs to customers at your stand</p>
+
+              <button onclick="applyJob(event, 'Hotdog Stand')">Apply</button>
+            </div>
+          </div>
+          <div class="job-card" onclick="toggleJob(this)">
+            🚙 Car Dealership
+
+            <div class="job-details">
+              <p><strong>Pay:</strong> $22–$40/hr</p>
+              <p><strong>Requirements:</strong> Clean Record, Sales Ability</p>
+              <p><strong>Description:</strong> Assist customers in browsing vehicles, negotiate deals, and complete sales</p>
+
+              <button onclick="applyJob(event, 'Car Dealership')">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Task Screen -->
+      <div id="task-screen" class="app-screen task-theme">
+        <div class="task-header">
+          <h2>📋 Tasks</h2>
+          <p id="taskJobTitle"></p>
+        </div>
+
+        <div id="taskList" class="task-list"></div>
+
+        <div class="task-footer">
+          <button onclick="backToJobs()">⬅ Back</button>
+        </div>
+      </div>
+
+      <!-- EMS App -->
+      <div id="ems-screen" class="app-screen ems-theme">
+        <h2>EMS Job App</h2>
+        <div id="jobSelection">
+          <h3>Select Your EMS Role</h3>
+          <div class="job-list">
+            <button data-job="Paramedic">Paramedic</button>
+            <button data-job="EMT">EMT</button>
+            <button data-job="Dispatcher">Dispatcher</button>
+          </div>
+        </div>
+        <div id="shiftSection" style="display:none;">
+          <p>You are now on shift as <strong id="jobRole"></strong>.</p>
+          <button id="endShiftBtn">End Shift</button>
+        </div>
+        <div id="dispatchSection" style="display:none;">
+          <h3>Emergency Calls</h3>
+          <div id="callsContainer"></div>
+          <div id="status"></div>
+        </div>
+      </div>
+
+      <!-- Music App -->
+      <div id="music-screen" class="app-screen music-theme">
+
+        <!-- Tabs -->
+        <div class="music-tabs">
+          <button id="localTab">Local</button>
+          <button id="scTab">SoundCloud</button>
+        </div>
+
+        <!-- Local Player -->
+        <div id="local-player" style="display: block;">
+          <audio id="music-audio"></audio>
+
+          <div class="music-header">Music</div>
+          <div class="music-player">
+            <div class="music-artwork">
+              <img id="music-artwork-img" src="" alt="Artwork" style="width:250px; height:250px; border-radius:15px;" />
+            </div>
+            <div class="music-info">
+              <h3 id="music-title">Song Title</h3>
+              <p id="music-artist">Artist Name</p>
+            </div>
+            <div class="music-controls">
+              <button id="prevBtn">⏮</button>
+              <button id="playPauseBtn">▶️</button>
+              <button id="nextBtn">⏭</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SoundCloud Player -->
+        <div id="soundcloud-player" style="display: none; margin-top:20px;">
+          <iframe id="sc-player" width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/grace-colon-385962829/sets/phoneui&color=%2300aabb&auto_play=false&hide_related=false&show_comments=true&visual=true">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Load SoundCloud Widget API -->
+      <script src="https://w.soundcloud.com/player/api.js"></script>
+
+      <!-- Wallet App -->
+      <div id="bank-screen" class="app-screen bank-theme">
+
+        <h2>👛 Wallet</h2>
+
+        <!-- Content -->
+        <div class="wallet-content">
+
+          <!-- Banking Section -->
+          <div class="wallet-section active" id="banking-tab">
+
+            <div class="bank-balance">
+              Balance: $<span id="bankBalance">0</span>
+            </div>
+
+            <h3>Transfer Money</h3>
+
+            <div class="bank-actions">
+              <input type="number" id="transferAmount" placeholder="Amount">
+              <input type="text" id="transferTarget" placeholder="Player ID">
+              <button onclick="transferMoney()">Send</button>
+            </div>
+
+            <h3>Recent Transactions</h3>
+
+            <div id="transactionHistory" class="transaction-history">
+              <p>No transactions yet.</p>
+            </div>
+
+            <div id="bankMessage" class="bank-message"></div>
+
+          </div>
+
+          <!-- ID Section -->
+          <div class="wallet-section" id="id-tab">
+
+            <div class="digital-id">
+
+              <div class="id-header">
+                <h3>🪪 Digital ID</h3>
+                <span>NEW YORK</span>
+              </div>
+
+              <div class="id-photo">
+                <img src="https://img.icons8.com/ios-filled/100/user-male-circle.png">
+              </div>
+
+              <div class="id-info">
+                <p><strong>Name:</strong> No Name</p>
+                <p><strong>Citizen ID:</strong> #00000</p>
+                <p><strong>Status:</strong> Citizen</p>
+                <p><strong>DOB:</strong> 01/01/2000</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- License Section -->
+          <div class="wallet-section" id="license-tab">
+
+            <h3>🚗 Licenses</h3>
+
+            <div class="license-card locked" id="driver-license">
+              <h4>Driver License</h4>
+              <p class="license-status">🔒 Locked</p>
+              <p class="license-desc">Take driving test to unlock</p>
+            </div>
+
+            <div class="license-card locked">
+              <h4>CDL License</h4>
+              <p class="license-status">🔒 Locked</p>
+              <p class="license-desc">Requires Driver License</p>
+            </div>
+
+            <div class="license-card locked">
+              <h4>Weapon Permit</h4>
+              <p class="license-status">🔒 Locked</p>
+              <p class="license-desc">Background Check Required</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom Navigation (MUST be outside wallet-content) -->
+        <div class="wallet-nav">
+
+          <button onclick="showWalletTab('banking-tab')">
+            💳
+            <span>Banking</span>
+          </button>
+
+          <button onclick="showWalletTab('id-tab')">
+            🪪
+            <span>ID</span>
+          </button>
+
+          <button onclick="showWalletTab('license-tab')">
+            🚗
+            <span>Licenses</span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Camera App -->
+      <div id="camera-screen" class="app-screen camera-theme">
+        <h2>📷 Camera</h2>
+        <video id="cameraView" autoplay playsinline></video>
+        <button onclick="capturePhoto()">📸 Take Photo</button>
+        <div id="photoTaken"></div>
+      </div>
+
+      <!-- Gallery App -->
+      <div id="gallery-screen" class="app-screen gallery-theme">
+        <h2>🖼️ Gallery</h2>
+        <div id="galleryContainer"></div>
+      </div>
+
+      <!-- Settings App -->
+      <div id="settings-screen" class="app-screen settings-theme">
+        <h2>⚙️ Settings</h2>
+
+        <!-- Category: Display -->
+        <div class="settings-category">
+          <h3 onclick="toggleCategory('wallpaperOptions')">📱 Display</h3>
+          <div class="settings-options" id="wallpaperOptions">
+            <p class="setting-subtitle">Change Wallpaper</p>
+            <div class="wallpaper-options">
+              <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45" onclick="setWallpaper(this.src)" />
+              <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" onclick="setWallpaper(this.src)" />
+              <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" onclick="setWallpaper(this.src)" />
+              <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=400&q=60" onclick="setWallpaper(this.src)">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=60" onclick="setWallpaper(this.src)">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" onclick="setWallpaper(this.src)">
+              <img src="https://images.unsplash.com/photo-1557683316-973673baf926" onclick="setWallpaper(this.src)">
+              <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357" onclick="setWallpaper(this.src)">
+              <img src="https://wallpapershome.com/images/pages/pic_h/26291.jpg" onclick="setWallpaper(this.src)" />
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" onclick="setWallpaper(this.src)" />
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" onclick="setWallpaper(this.src)" />
+              <img src="https://wallpapercave.com/wp/wp9765464.jpg" onclick="setWallpaper(this.src)" />
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" onclick="setWallpaper(this.src)" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Sounds -->
+        <div class="settings-category">
+          <h3 onclick="toggleCategory('soundOptions')">🔊 Sounds</h3>
+          <div class="settings-options hidden" id="soundOptions">
+            <button onclick="toggleSilentMode()">Toggle Silent Mode</button>
+          </div>
+        </div>
+
+        <!-- Category: Battery -->
+        <div class="settings-category">
+          <h3 onclick="toggleCategory('batteryOptions')">🔋 Battery</h3>
+          <div class="settings-options hidden" id="batteryOptions">
+            <p>Battery Percentage: <span id="batteryLevel">100%</span></p>
+          </div>
+        </div>
+
+        <!-- Category: Weather -->
+        <div class="settings-category">
+          <h3 onclick="toggleCategory('weatherOptions')">☀️ Weather</h3>
+          <div class="settings-options hidden" id="weatherOptions">
+            <p class="setting-subtitle">Set Manual Location</p>
+            <input type="text" id="weather-location-input" placeholder="e.g., New York, NY" />
+            <button onclick="saveWeatherLocation()">Save Location</button>
+          </div>
+        </div>
+
+        <!-- Category: Language -->
+        <div class="settings-category">
+          <h3 onclick="toggleCategory('languageOptions')">🌐 Language</h3>
+
+          <div class="settings-options hidden" id="languageOptions">
+
+            <p class="setting-subtitle">Select Language</p>
+
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="pt">Português</option>
+            </select>
+
+            <p id="languageStatus">Current: English</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Taxi App -->
+      <div id="taxi-screen" class="app-screen taxi-theme">
+        <h2>Taxi Dispatch</h2>
+
+        <!-- Role Selection -->
+        <div id="taxiRoleSelection">
+          <p>Choose your role:</p>
+          <button onclick="selectTaxiRole('driver')">🚖 Driver</button>
+          <button onclick="selectTaxiRole('passenger')">🧍 Passenger</button>
+        </div>
+
+        <!-- Driver Section -->
+        <div id="driverSection" class="taxi-section" style="display: none;">
+          <h3>Available Ride Requests</h3>
+          <div id="rideRequestsContainer">
+            <p>No requests yet.</p>
+          </div>
+        </div>
+
+        <!-- Passenger Section -->
+        <div id="passengerSection" class="taxi-section" style="display: none;">
+          <h3>Request a Taxi</h3>
+          <form onsubmit="requestTaxi(event)">
+            <label>
+              Pickup Location:
+              <input type="text" id="pickupLocation" required />
+            </label>
+            <label>
+              Dropoff Location:
+              <input type="text" id="dropoffLocation" required />
+            </label>
+            <button type="submit">Request Ride</button>
+          </form>
+          <p id="rideStatus"></p>
+        </div>
+      </div>
+
+      <!-- Messages App Screen -->
+      <div id="messages-screen" class="app-screen">
+
+        <!-- Conversations list screen -->
+        <div id="conversations-screen" class="messages-view active">
+          <div class="messages-header">
+            <span class="messages-title">💬 Messages</span>
+            <button id="editContactsBtn" class="edit-btn">✎</button>
+            <button id="addContactBtn" class="add-btn">+</button>
+          </div>
+          <div class="conversations-list" id="conversationsList">
+            <!-- Contacts will show here -->
+          </div>
+        </div>
+
+        <!-- Chat thread screen -->
+        <div id="chat-screen" class="messages-view">
+          <div class="messages-header">
+            <button id="backToConversations" class="back-btn">←</button>
+            <span id="chatContactName">Contact</span>
+          </div>
+
+          <div class="messages-list" id="messagesList">
+            <!-- Messages for a conversation -->
+          </div>
+
+          <div class="message-input-area">
+            <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off" />
+            <button id="sendMessageBtn">Send</button>
+          </div>
+        </div>
+
+        <!-- Add Contact screen -->
+        <div id="add-contact-screen" class="messages-view">
+          <div class="messages-header">
+            <button id="backToConversationsFromAdd" class="back-btn">←</button>
+            <span class="messages-title">New Contact</span>
+          </div>
+          <div class="add-contact-form">
+            <input type="text" id="newContactName" placeholder="Name" />
+            <input type="text" id="newContactNumber" placeholder="Phone Number" />
+            <button id="saveContactBtn">Save</button>
+          </div>
+        </div>
+
+        <!-- Edit Contacts screen -->
+        <div id="edit-contacts-screen" class="messages-view">
+          <div class="messages-header">
+            <button id="backToConversationsFromEdit" class="back-btn">←</button>
+            <span class="messages-title">Edit Contacts</span>
+          </div>
+          <div class="edit-contacts-list" id="editContactsList">
+            <button id="deleteContactBtn" class="delete-btn">Delete</button>
+            <!-- Editable contacts will appear here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Contacts App -->
+      <div id="contacts-screen" class="app-screen contacts-theme">
+        <div class="messages-header">
+          <span class="messages-title">Contacts</span>
+          <button id="contactsAddBtn" class="add-btn">+</button>
+        </div>
+
+        <div class="edit-contacts-list" id="contactsList">
+          <!-- Contact cards will load here -->
+        </div>
+      </div>
+
+      <!-- Add Contact Screen -->
+      <div id="contacts-add-screen" class="app-screen contacts-theme hidden">
+        <div class="messages-header">
+          <button id="backToContactsFromAdd" class="back-btn contacts-back-btn">←</button>
+          <span class="messages-title">Add Contact</span>
+        </div>
+        <form class="add-contact-form">
+          <input type="text" id="contactsNewName" placeholder="Name" />
+          <input type="text" id="contactsNewNumber" placeholder="Phone Number" />
+          <button type="button" id="contactsSaveBtn">Save</button>
+        </form>
+      </div>
+
+      <!-- FaceTime Screen -->
+      <div id="facetime-screen" class="app-screen facetime-theme">
+        <div class="facetime-header">
+          <span>FaceTime</span>
+        </div>
+
+        <div class="facetime-body">
+          <!-- Remote video placeholder -->
+          <div class="remote-video">
+            <span id="facetime-remote-text">📹 Connecting...</span>
+          </div>
+
+          <!-- Your camera preview (small box) -->
+          <div class="self-video">
+            <span>👤 You</span>
+          </div>
+        </div>
+
+        <div class="facetime-footer">
+          <button id="facetimeEndBtn" class="end-call-btn">End</button>
+        </div>
+      </div>
+
+      <!-- CITYEATS APP -->
+      <div id="cityeats-screen" class="app-screen">
+
+        <div class="cityeats-header">
+          <input type="text" id="cityeatsSearch" placeholder="Search food" />
+          <div class="cityeats-cart">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/shopping-bag.png" class="cart-icon" />
+            <span id="cartCount">0</span>
+          </div>
+        </div>
+
+        <!-- CART PANEL -->
+        <div class="cityeats-cart-panel" id="cartPanel">
+          <div class="cart-header">
+            <span>Cart</span>
+            <button id="closeCart">&times;</button>
+          </div>
+          <div class="cart-items" id="cartItems"></div>
+          <div class="cart-footer">
+            <span>Total: $<span id="cartTotal">0.00</span></span>
+            <button id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+
+        <!-- CHECKOUT SCREEN -->
+        <div id="checkoutScreen" class="checkout-screen" style="display:none;">
+          <div class="checkout-header">
+            <span>Checkout</span>
+            <button id="closeCheckout">&times;</button>
+          </div>
+          <div class="checkout-items" id="checkoutItems"></div>
+          <div class="checkout-footer">
+
+            <!-- PAYMENT METHOD -->
+            <div class="payment-section">
+              <div class="payment-title">Payment Method</div>
+
+              <div class="payment-method active" data-method="card">
+                💳 Card ending •••• 4242
+              </div>
+
+              <button id="addCardBtn" class="add-card-btn">
+                + Add Card
+              </button>
+            </div>
+
+            <div class="checkout-total">
+              Total: $<span id="checkoutTotal">0.00</span>
+            </div>
+
+            <button id="confirmCheckout">Confirm Order</button>
+          </div>
+        </div>
+
+        <!-- Horizontal scroll categories -->
+        <div class="cityeats-category-wrapper">
+          <div class="cityeats-categories">
+            <button class="cat active" data-cat="all">All</button>
+            <button class="cat" data-cat="Burgers">Burgers</button>
+            <button class="cat" data-cat="Sandwiches">Sandwiches</button>
+            <button class="cat" data-cat="Pizza">Pizza</button>
+            <button class="cat" data-cat="Wings">Wings</button>
+            <button class="cat" data-cat="Steak">Steak</button>
+            <button class="cat" data-cat="Seafood">Seafood</button>
+            <button class="cat" data-cat="Wraps">Wraps</button>
+            <button class="cat" data-cat="Tacos">Tacos</button>
+            <button class="cat" data-cat="Salads">Salads</button>
+            <button class="cat" data-cat="Soups">Soups</button>
+            <button class="cat" data-cat="Sides">Sides</button>
+            <button class="cat" data-cat="Drinks">Drinks</button>
+            <button class="cat" data-cat="Desserts">Desserts</button>
+          </div>
+        </div>
+
+        <!-- Food grid stays fixed -->
+        <div id="cityeatsGrid" class="food-grid"></div>
+
+      </div>
+
+      <!-- GPS App -->
+      <div id="gps-screen" class="app-screen">
+        <div id="gtamap" class="gps-map"></div>
+
+        <div class="gps-search">
+          <input type="text" id="gpsSearchInput" placeholder="Search location..." />
+          <button id="gpsSearchBtn">🔍</button>
+        </div>
+
+        <!-- Locate Me Button -->
+        <button id="locateMeBtn" class="gps-locate">📍</button>
+
+        <!-- Live Tracking Button -->
+        <button id="liveTrackBtn" class="gps-track"></button>
+      </div>
+
+      <!-- Leaflet CSS & JS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+      <!-- CALCULATOR APP -->
+      <div id="calculator-screen" class="app-screen">
+        <div class="calculator-display" id="calcDisplay">0</div>
+
+        <div class="calculator-buttons">
+          <button onclick="clearCalc()">AC</button>
+          <button onclick="toggleSign()">±</button>
+          <button onclick="percent()">%</button>
+          <button class="op" onclick="operator('/')">÷</button>
+
+          <button onclick="inputNum('7')">7</button>
+          <button onclick="inputNum('8')">8</button>
+          <button onclick="inputNum('9')">9</button>
+          <button class="op" onclick="operator('*')">×</button>
+
+          <button onclick="inputNum('4')">4</button>
+          <button onclick="inputNum('5')">5</button>
+          <button onclick="inputNum('6')">6</button>
+          <button class="op" onclick="operator('-')">−</button>
+
+          <button onclick="inputNum('1')">1</button>
+          <button onclick="inputNum('2')">2</button>
+          <button onclick="inputNum('3')">3</button>
+          <button class="op" onclick="operator('+')">+</button>
+
+          <button onclick="deleteDigit()">⌫</button>
+          <button class="zero-btn" onclick="inputNum('0')">0</button>
+          <button onclick="inputNum('.')">.</button>
+          <button class="equals" onclick="calculate()">=</button>
+        </div>
+      </div>
+
+      <!-- CITYPULSE APP -->
+      <div id="citypulse-screen" class="app-screen">
+
+        <div class="citypulse-header">
+          <span>CityPulse</span>
+        </div>
+
+        <!-- CITYPULSE COMPOSE CARD -->
+        <div class="citypulse-compose-card">
+          <div class="compose-title">Write a News Story</div>
+          <div class="compose-input-wrapper">
+            <textarea id="citypulseComposeInput" placeholder="Add photos, videos, or go live"></textarea>
+          </div>
+
+          <!-- Buttons wrapper -->
+          <div class="compose-buttons" style="position: relative; display: inline-block;">
+            <button class="compose-open-btn">Start</button>
+            <button class="compose-plus-btn" aria-controls="citypulseMenu" aria-expanded="false">+</button>
+
+            <!-- Popover Menu -->
+            <div id="citypulseMenu" class="citypulse-menu" role="menu" aria-hidden="true">
+              <div class="menu-option" data-action="live">🔴 Go Live</div>
+              <div class="menu-option" data-action="photo">🌄 Add Photo</div>
+              <div class="menu-option" data-action="video">🎥 Add Video</div>
+            </div>
+          </div>
+        </div <!-- SECTION TITLE -->
+        <div class="citypulse-latest-header">Latest News</div>
+
+        <!-- FEED -->
+        <div class="citypulse-feed" id="citypulseFeed">
+
+          <!-- EMPTY STATE -->
+          <div class="empty-citypulse">
+            <img src="https://img.icons8.com/ios-filled/100/808080/news.png">
+            <h2>No stories yet</h2>
+            <p>When players or NPCs upload videos, images, or reports, they'll appear here.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- QuickDrop App -->
+      <div id="quickdrop-screen" class="app-screen">
+        <h2>📦 QuickDrop</h2>
+
+        <p class="quickdrop-subtitle">Available deliveries</p>
+
+        <div id="quickdropList" class="quickdrop-list">
+          <div class="quickdrop-empty">No deliveries available yet</div>
+        </div>
+
+        <div id="deliveryMessage" class="delivery-message"></div>
+      </div>
+
+      <!-- Marketplace App -->
+<div id="tradehub-screen" class="app-screen tradehub-theme">
+
+  <h2>🛒 Trade Hub</h2>
+
+  <div class="tradehub-content">
+
+    <!-- MY LISTINGS -->
+    <div class="tradehub-section active" id="myListings-tab">
+
+      <!-- Create Listing -->
+      <div class="tradehub-create">
+
+        <input type="file" id="listingImage">
+
+        <button onclick="openGalleryForTradeHub()">
+          📸 Choose From Gallery
+        </button>
+
+        <div id="tradehubPreview"></div>
+
+        <select id="listingCategory" onchange="updateCategoryFields()">
+          <option value="">Select Category</option>
+
+          <option value="vehicle">Vehicles</option>
+          <option value="clothing">Clothing</option>
+          <option value="electronics">Electronics</option>
+          <option value="furniture">Furniture</option>
+          <option value="services">Services</option>
+          <option value="other">Other</option>
+        </select>
+
+        <div id="categoryFields"></div>
+
+        <input id="itemName" placeholder="Item Name">
+
+        <input id="itemPrice"
+               type="number"
+               placeholder="Price">
+
+        <textarea id="itemDescription"
+                  placeholder="Description"></textarea>
+
+        <button onclick="createListing()">
+          List Item
+        </button>
+
+      </div>
+
+      <div id="tradehubList"
+           class="tradehub-list"></div>
+
+    </div>
+
+    <!-- BUY TAB -->
+    <div class="tradehub-section" id="buy-tab">
+
+      <input
+        id="tradehubSearch"
+        placeholder="🔎 Search Listings">
+
+      <div id="buyListings"></div>
+
+    </div>
+
+    <!-- BROWSE TAB -->
+    <div class="tradehub-section" id="browse-tab">
+
+      <div class="browse-categories">
+
+        <button>🚗 Vehicles</button>
+        <button>👕 Clothing</button>
+        <button>💻 Electronics</button>
+        <button>🛋 Furniture</button>
+        <button>🛠 Services</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="tradehub-nav">
+
+    <button onclick="showTradeHubTab('myListings-tab')">
+      📦
+      <span>Listings</span>
+    </button>
+
+    <button onclick="showTradeHubTab('buy-tab')">
+      🛒
+      <span>Buy</span>
+    </button>
+
+    <button onclick="showTradeHubTab('browse-tab')">
+      🔍
+      <span>Browse</span>
+    </button>
+
+  </div>
+
+</div>
+
+      <!-- App Store -->
+      <div id="appstore-screen" class="app-screen">
+        <h2>🛍 App Store</h2>
+        <p>Welcome to the App Store</p>
+
+        <div id="appList"></div>
+      </div>
+
+      <!-- Lock Screen -->
+      <div id="lock-screen" class="lock-screen">
+        <div class="lock-date" id="lockDate">Loading date...</div>
+        <div class="lock-time" id="lockTime">--:--</div>
+        <div class="swipe-up">Swipe up to unlock</div>
+
+        <!-- Home bar on lock screen -->
+        <div class="home-bar" id="lockHomeBar"></div>
+      </div>
+
+      <!-- Power Off Overlay -->
+      <div id="power-off-screen" class="hidden">
+        <div class="power-off-container">
+          <p>Slide to power off</p>
+          <div class="power-off-slider" id="powerOffSlider"></div>
+          <button id="cancelPowerOff">Cancel</button>
+        </div>
+      </div>
+
+      <!-- home bar inside iphone-frame -->
+      <div class="home-bar" onclick="backHome()"></div>
+    </div>
+
+    <div id="unlockBanner" class="unlock-banner hidden">Unlocked</div><!-- closes .iphone-frame -->
+  </div> <!-- closes phone-wrapper -->
+</div> <!-- closes iphone-outer-frame -->
